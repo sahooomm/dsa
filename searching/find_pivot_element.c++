@@ -12,10 +12,10 @@ int find_pivot_element(int arr[],int n){
         if(start == end){
             return start;
         }
-        else if(arr[mid]<arr[mid-1]){
+        else if(mid-1 >= 0 && arr[mid]<arr[mid-1]){
             return mid-1;
         }
-        else if(arr[mid]>arr[mid+1]){
+        else if(mid+1 < n && arr[mid]>arr[mid+1]){
             return mid;
         }
         else if(arr[mid]<arr[start]){
