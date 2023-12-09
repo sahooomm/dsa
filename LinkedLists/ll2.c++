@@ -104,6 +104,8 @@ void insertAtPosition(Node* &head, Node* &tail, int data, int pos){
 
 
 
+
+
 int main(){
 
     Node* head = NULL;
@@ -122,6 +124,9 @@ int main(){
     insertAtPosition(head, tail, 100 , 1);
     insertAtPosition(head, tail, 200 , 3);
     insertAtPosition(head, tail, 300 , 10);
+    insertAtPosition(head, tail, 44, 1);
+    insertAtPosition(head, tail, 150, 5);
+
 
     printList(head);
     cout<<"\nThe number of elements is:"<<countNodes(head)<<endl;
